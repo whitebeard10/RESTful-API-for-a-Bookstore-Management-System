@@ -29,4 +29,32 @@ This project provides a RESTful API for managing a bookstore, allowing users to 
 
    ```bash
    git clone https://github.com/your_username/bookstore-api.git
+   ```
+2. Install dependencies:
+3. Set up the database:
+4. Run the application:
+   Navigate to application folder and run the file as:
+   ```bash
+   python app.py
+   ```
+## API Documentation
+
+The API documentation is available in Swagger and can be accessed by running the application and visiting the Swagger UI endpoint (/apidocs) in a web browser.
+
+## Testing
+
+Unit tests are included to ensure the correctness and reliability of the API endpoints. To run the tests, use the following command:
+```bash
+python test_app.py
 ```
+## API Collection: 
+Following is the postman link of the API testing: 
+
+[POSTMAN LINK](https://www.postman.com/docking-module-cosmonaut-85633825/workspace/farmwiseai)
+
+## License
+
+This project uses the following license: 'MIT license'.
+
+
+   
