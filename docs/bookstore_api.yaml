@@ -1,0 +1,104 @@
+swagger: "2.0"
+info:
+  title: Bookstore Management API
+  description: RESTful API for managing a bookstore
+  version: 1.0.0
+servers:
+  - url: http://localhost:5000
+paths:
+  /books:
+    get:
+      summary: Retrieve all books
+      responses:
+        "200":
+          description: A list of books
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Book"
+    post:
+      summary: Add a new book
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Book"
+      responses:
+        "201":
+          description: Book added successfully
+        "401":
+          description: Unauthorized
+  /books/{isbn}:
+    get:
+      summary: Retrieve a specific book by ISBN
+      parameters:
+        - in: path
+          name: isbn
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Details of the book
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Book"
+        "404":
+          description: Book not found
+    put:
+      summary: Update details of a specific book by ISBN
+      parameters:
+        - in: path
+          name: isbn
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Book"
+      responses:
+        "200":
+          description: Book updated successfully
+        "404":
+          description: Book not found
+    delete:
+      summary: Delete a specific book by ISBN
+      parameters:
+        - in: path
+          name: isbn
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Book deleted successfully
+        "404":
+          description: Book not found
+components:
+  schemas:
+    Book:
+      type: object
+      properties:
+        title:
+          type: string
+        author:
+          type: string
+        isbn:
+          type: string
+        price:
+          type: number
+        quantity:
+          type: integer
+      required:
+        - title
+        - author
+        - isbn
+        - price
+        - quantity

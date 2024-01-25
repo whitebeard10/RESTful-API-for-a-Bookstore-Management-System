@@ -1,0 +1,33 @@
+# Example responses for bookstore API endpoints
+get_all_books_response:
+  - title: "Book 1"
+    author: "Author 1"
+    isbn: "1234567890123"
+    price: 29.99
+    quantity: 10
+  - title: "Book 2"
+    author: "Author 2"
+    isbn: "9876543210987"
+    price: 19.99
+    quantity: 5
+
+get_book_response:
+  title: "Book 1"
+  author: "Author 1"
+  isbn: "1234567890123"
+  price: 29.99
+  quantity: 10
+
+add_book_request:
+  title: "New Book"
+  author: "New Author"
+  isbn: "9876543210987"
+  price: 24.99
+  quantity: 8
+
+update_book_request:
+  title: "Updated Book"
+  author: "Updated Author"
+  isbn: "1234567890123"
+  price: 34.99
+  quantity: 12
