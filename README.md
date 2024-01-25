@@ -31,7 +31,12 @@ This project provides a RESTful API for managing a bookstore, allowing users to 
    git clone https://github.com/whitebeard10/RESTful-API-for-a-Bookstore-Management-System.git  
    ```
 2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 3. Set up the database:
+- Configure the MySQL database URI in app.py.
+- Ensure the database is created with the necessary table book.
 4. Run the application:
    Navigate to application folder and run the file as:
    ```bash
