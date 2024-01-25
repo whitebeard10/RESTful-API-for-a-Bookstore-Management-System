@@ -12,7 +12,7 @@ This project provides a RESTful API for managing a bookstore, allowing users to 
   - Updating book details
   - Deleting a book
 - **Authentication**: Implements basic authentication to restrict access to certain endpoints.
-- **Documentation**: Includes Swagger/OpenAPI Specification for clear documentation of API endpoints and usage.
+- **Documentation**: Includes Swagger for clear documentation of API endpoints and usage.
 - **Testing**: Provides unit tests for the API endpoints to ensure functionality and handle edge cases and errors effectively.
 
 ## Technologies Used
@@ -28,7 +28,7 @@ This project provides a RESTful API for managing a bookstore, allowing users to 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your_username/bookstore-api.git
+   git clone [https://github.com/your_username/bookstore-api.git](https://github.com/whitebeard10/RESTful-API-for-a-Bookstore-Management-System.git)https://github.com/whitebeard10/RESTful-API-for-a-Bookstore-Management-System.git 
    ```
 2. Install dependencies:
 3. Set up the database:
