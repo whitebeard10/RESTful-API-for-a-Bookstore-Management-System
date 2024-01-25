@@ -28,7 +28,7 @@ This project provides a RESTful API for managing a bookstore, allowing users to 
 1. Clone the repository:
 
    ```bash
-   git clone [https://github.com/your_username/bookstore-api.git](https://github.com/whitebeard10/RESTful-API-for-a-Bookstore-Management-System.git)https://github.com/whitebeard10/RESTful-API-for-a-Bookstore-Management-System.git 
+   git clone https://github.com/whitebeard10/RESTful-API-for-a-Bookstore-Management-System.git  
    ```
 2. Install dependencies:
 3. Set up the database:
